@@ -1,4 +1,4 @@
-# The Site Configuration
+# _config.yml
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -9,27 +9,22 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: America/Los_Angeles
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: Chon Torres # the main title
-
-tagline: My personal blog # it will display as the subtitle
-
+tagline: My personal blog and portfolio
 description: >- # used by seo meta and the atom feed
-  blog, chontorres, github, iOS, macOS, Xcode, Swift
+  A portfolio site for Chon Torres
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://ironcook67.github.io"
+url: ""
 
 github:
   username: ironcook67 # change to your GitHub username
-
-#twitter:
-#  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -95,10 +90,10 @@ theme_mode: dark # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+# cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/6676993?v=4
+avatar: "https://avatars.githubusercontent.com/u/6676993?v=4"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -173,10 +168,11 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: "_posts" # An empty string here means all files in the project
       type: posts
     values:
-      layout: post
+#      layout: post
+      layout: "posts"
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
